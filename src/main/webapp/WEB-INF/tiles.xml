@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="mainLayout" template="/WEB-INF/jsp/layouts/main-layout.jsp">
+		<put-attribute name="title" value="MyKart" />
+		<put-attribute name="header" value="/WEB-INF/jsp/layouts/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/layouts/footer.jsp" />
+	</definition>
+	
+	<definition name="home-index" extends="mainLayout">
+	    <put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/tiles/home/index.jsp" />
+	</definition>
+		
+	<definition name="dashboard-index" extends="mainLayout">
+		<put-attribute name="title" value="Dashboard"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/tiles/dashboard/index.jsp" />
+	</definition>
+	
+	<definition name="admin-index" extends="mainLayout">
+		<put-attribute name="title" value="Admin"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/tiles/admin/index.jsp" />
+	</definition>
+	
+	<definition name="profile-index" extends="mainLayout">
+		<put-attribute name="title" value="Profile"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/tiles/profile/index.jsp" />
+	</definition>
+	
+	<definition name="management-index" extends="mainLayout">
+		<put-attribute name="title" value="Management"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/tiles/management/index.jsp" />
+	</definition>
+
+</tiles-definitions>
+	
